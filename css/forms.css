@@ -1,0 +1,37 @@
+@charset "utf-8";
+/* CSS Document */
+input.text{
+	border: thin dotted #333333;
+	font-family:open;
+	height: 20px;
+	padding: 5px;
+	width: 150px;
+	-webkit-transition: all 0.7s linear;
+	-moz-transition: all 0.7s linear;
+	-ms-transition: all 0.7s linear;
+	-o-transition: all 0.7s linear;
+	transition: all 0.7s linear;
+}
+
+input.text:focus {
+	border-radius:5px;
+	width: 200px;
+}
+input#reset, input#submit
+{
+	background-color:#ff2b06;
+	padding:10px;
+	cursor:auto;
+	margin:10px;
+	text-transform:uppercase;
+	color:#fff;
+	font-family:Arvo;
+	border:none;
+	cursor: pointer;
+
+	}
+input#reset:hover, input#submit:hover
+{
+	outline:#ff2b06 1px solid;
+	outline-offset:2px;
+}

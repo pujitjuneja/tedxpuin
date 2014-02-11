@@ -1,0 +1,26 @@
+@charset "utf-8";
+/* CSS Document */
+
+#speakerbio{
+	font-family:open;
+	font-size:14px;
+	width:60%;
+	visibility:hidden;
+}
+
+#speakerbio:target{
+	visibility:visible;
+}
+
+.CollapsiblePanel{
+	width:60%;
+	text-align:center;
+	margin-left:20%;
+	border:none;
+	}
+.CollapsiblePanelTab{
+	width:600px;
+	font-family:openthin;;
+	text-transform:capitalize;
+	font-size:48px;}
+	

@@ -1,0 +1,216 @@
+<!doctype html>
+<html>
+<head>
+<title>TEDxPU: TEDx Panjab University</title>
+<script src="Scripts/jquery.min.js"></script>
+<script src="Scripts/smoothscroll.js"></script>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/forms.css">
+<link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
+<style type="text/css">
+<!--
+.style1 {color: #333333}
+#wrapper{
+	width: 100%;
+	height: auto;
+}
+#content{
+	height:600px;}
+#contact_form{
+	font-family:'Arvo',serif;}
+#apDiv2 {
+	position: absolute;
+	width: 170px;
+	height: 169px;
+	z-index: 1;
+	left: 289px;
+	top: 308px;
+	overflow: hidden;
+	background-image: url(images/register.png);
+	color: #FFF;
+	-webkit-opacity: 0.7;
+	-moz-opacity: 0.7;
+	opacity: 0.7;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+#apDiv2:hover {
+	-webkit-opacity: 1.0;
+	-moz-opacity: 1.0;
+	opacity: 1.0;
+}
+-->
+</style>
+<script type="text/javascript">
+function MM_validateForm() { //v4.0
+  if (document.getElementById){
+    var i,p,q,nm,test,num,min,max,errors='',args=MM_validateForm.arguments;
+    for (i=0; i<(args.length-2); i+=3) { test=args[i+2]; val=document.getElementById(args[i]);
+      if (val) { nm=val.name; if ((val=val.value)!="") {
+        if (test.indexOf('isEmail')!=-1) { p=val.indexOf('@');
+          if (p<1 || p==(val.length-1)) errors+='- '+nm+' must contain an e-mail address.\n';
+        } else if (test!='R') { num = parseFloat(val);
+          if (isNaN(val)) errors+='- '+nm+' must contain a number.\n';
+          if (test.indexOf('inRange') != -1) { p=test.indexOf(':');
+            min=test.substring(8,p); max=test.substring(p+1);
+            if (num<min || max<num) errors+='- '+nm+' must contain a number between '+min+' and '+max+'.\n';
+      } } } else if (test.charAt(0) == 'R') errors += '- '+nm+' is required.\n'; }
+    } if (errors) alert('The following error(s) occurred:\n'+errors);
+    document.MM_returnValue = (errors == '');
+} }
+</script>
+</head>
+
+<body>
+<div id="wrapper">
+<!--<div id="header2"></div>-->
+<div id="header">
+<img src="images/logo.png" alt="logo" name="logo" width="432" height="70" align="left" />
+<ul id="nav"><li><a href="home">Home</a></li>
+<li><a href="about=">About</a></li>
+<li>
+	<a href="speakers">Speakers</a>
+<!--		<ul>
+        <li><a href="speakers.html#sidin" class="smoothScroll">Sidin Vadukut</a></li>
+        <li><a href="speakers.html#kamlesh" class="smoothScroll">Kamlesh Patel</a></li>
+        <li><a href="speakers.html#sumit" class="smoothScroll">Sumit Dagar</a></li>
+        <li><a href="speakers.html#kanishka" class="smoothScroll">Kanishka Sharma</a></li>
+        <li><a href="speakers.html#vasu" class="smoothScroll">Vasu Dixit</a></li>
+        <li><a href="speakers.html#harit" class="smoothScroll">Harit Soni</a></li>
+        <li><a href="speakers.html#astha" class="smoothScroll">Astha Kapoor</a></li>
+        </ul>-->
+      </li>
+<li><a href="blog">Blog</a></li>
+<!--<li><a href="partners.html">Partners</a></li>-->
+<li><a href="register">Register</a></li>
+</ul>
+</div>
+<a id="top"></a>
+
+<h1 class="headings" style="text-align:center; margin-top:40px;">Register for TEDxPU</h1>
+<fieldset style="width:600px;border:#333333 thin dotted; border-radius:10px; margin-top:5em;" onSubmit="MM_validateForm('name','','R','email','','RisEmail','pin','','RisNum','phone','','RisNum');return document.MM_returnValue">
+<legend style="font-family:'Arvo',serif;">Register
+</legend>
+<div id="apDiv2"><p style="font-family: open; font-size: 16px; position: relative; top: 60px; width: 80%; text-align: center; font-weight: bold; transform:rotate(-25deg); -webkit-transform:rotate(-25deg)">REGISTRATIONS OPENING SOON!</p></div>
+<form action="" method="get" name="contact" id="contact_form">
+  <table width="500" border="0">
+  <tr>
+    <td><div align="right">Name:</div></td>
+    <td height="50"><input name="Name" type="text" class="text" id="name" placeholder="Name"/></td>
+    </tr>
+  <tr>
+    <td><div align="right">Email:</div></td>
+    <td height="50"><input name="Email" type="text" class="text" id="email" placeholder="Email" /></td>
+    </tr>
+  <tr>
+    <td><div align="right">Date of birth: </div></td>
+    <td height="50"><input type="date" /></td>
+    </tr>
+  <tr>
+    <td><div align="right">Gender:</div></td>
+    <td height="60" align="left"><p>
+      <label>
+        <input type="radio" name="RadioGroup1" value="gender" id="RadioGroup1_0" />
+        Male</label>
+      <br />
+      <label>
+        <input type="radio" name="RadioGroup1" value="gender" id="RadioGroup1_1" />
+        Female</label>
+      <br />
+    </p></td>
+    </tr>
+  <tr>
+    <td><div align="right">Accomodation Required?</div></td>
+    <td height="60"><p>
+      <label>
+        <input type="radio" name="RadioGroup2" value="accom" id="RadioGroup2_0">
+        Yes</label>
+      <br>
+      <label>
+        <input type="radio" name="RadioGroup2" value="accom" id="RadioGroup2_1">
+        No</label>
+      <br>
+    </p></td>
+    </tr>
+  <tr>
+    <td><div align="right">Address:</div></td>
+    <td><label for="address"></label>
+      <textarea name="address" class="text" id="address"></textarea></td>
+  </tr>
+  <tr>
+    <td><div align="right">
+      <label></label>
+    
+      <label></label>
+City:</div></td>
+    <td height="50"><select name="select" id="select">
+      <option selected>Delhi</option>
+      <option>Chandigarh</option>
+      <option>Ambala</option>
+      <option>Patiala</option>
+      <option>Ludhiana</option>
+      <option>Faridabad</option>
+      <option>Noida</option>
+      <option>Gurgaon</option>
+      <option>Mumbai</option>
+      <option>Pune</option>
+    </select></td>
+  </tr>
+  <tr>
+    <td><div align="right">
+      <label></label>
+    PIN:</div></td>
+    <td height="50"><label for="pin"></label>
+      <input name="pin" type="text" class="text" id="pin" placeholder="eg. 110034" maxlength="6"></td>
+  </tr>
+  <tr>
+    <td><div align="right">Phone No.:</div></td>
+    <td height="50"><label for="phone"></label>
+      <input name="phone" type="text" class="text" id="phone" placeholder="eg. 9911122554" maxlength="10"></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td><input type="reset" name="reset" id="reset" value="Reset" />
+      <input type="submit" name="submit" id="submit" value="Submit" /></td>
+  </tr>
+</table>
+<br />
+<br />
+</form>
+</fieldset>
+<div id="content"></div>
+<div class="style1" id="footer" style="text-align:center;">&copy; 2013 <a href="index.html" style="color:#ff2b06;">TEDxPU</a> | This independently organized <span class="red">TEDx</span> event is operated under license from <span class="red">TED</span> | Website by Pujit Singh Juneja<br><br>
+<section><h3>Speakers</h3>
+<span class="goallist">TBA</span>
+<!--<ul class="goallist">
+		<li><a href="speakers.html#sidin" class="smoothScroll">Sidin Vadukut</a></li>
+        <li><a href="speakers.html#kamlesh" class="smoothScroll">Kamlesh Patel</a></li>
+        <li><a href="speakers.html#sumit" class="smoothScroll">Sumit Dagar</a></li>
+        <li><a href="speakers.html#kanishka" class="smoothScroll">Kanishka Sharma</a></li>
+        <li><a href="speakers.html#vasu" class="smoothScroll">Vasu Dixit</a></li>
+        <li><a href="speakers.html#harit" class="smoothScroll">Harit Soni</a></li>
+        <li><a href="speakers.html#astha" class="smoothScroll">Astha Kapoor</a></li>
+</ul>--></section>
+<section><h3>Panjab University</h3>
+<ul>
+		<!--<li><br><img src="images/pu.png" alt="Panjab University" width="98" height="100"></li>-->
+        <li>Website: <a href="http://www.puchd.ac.in">http://www.puchd.ac.in</a></li>
+        <li>Sector 14, Chandigarh</li>
+		<li>Tel:+91-172-2534299</li>
+</ul></section>
+<section><h3>Contact Us</h3>
+  E-mail:<a href="mailto:tedxpu13@gmail.com?Subject=Query%20Regarding%20TEDxPU">tedxpu13@gmail.com</a><br>
+  Tel. No.:+91-9988446486</section>
+<section><h3>Stay Connected</h3>
+<ul>
+	<li><a href="http://www.facebook.com/tedxpu" target="_blank">Join us on Facebook</a></li>
+    <li><a href="https://twitter.com/TEDxPU" target="_blank">Join us on Twitter</a></li>
+    <li><a href="blog.html">Conversations</a></li>
+</ul>
+</section>
+</div></div>
+</body>
+</html>
